@@ -17,6 +17,11 @@
 
       <div class="col-lg-6">
         <h1>Identificate</h1>
+        <div *ngIf="errorMessage">
+          <div class="alert alert-primary" role="alert">
+            <strong>Error</strong> {{errorMessage}}
+          </div>
+        </div>
         <!--
             #nombre_del_formulario="ngForm" ngForm para indicar que es un
             formulario de angular.
